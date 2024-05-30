@@ -1,0 +1,128 @@
+/* Estilos generales */
+body {
+    font-family: Times New Roman;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #808080;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#000000 ;
+    color:  #f2f2f2;;
+    padding: 1em;
+    font-family: Times New Roman;
+    font-size: 17px;
+    }
+
+header .logo {
+    font-size: 1.5em;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: #F8F8FF;
+    text-decoration: none;
+}
+
+/* Secciones */
+section {
+    padding: 2em;
+    margin: 1em 0;
+}
+
+.hero {
+    background-color: #DC143C;
+    color: white;
+    text-align: center;
+    padding: 4em 2em;
+    background-image: url('pintura.png');
+    background-position: center;
+    background-size: 100%;
+}
+
+#about, #portfolio, #services, #contact {
+    background-color:black; 
+    color:white; 
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.artwork {
+    background-color: #F8F8FF;
+    padding: 2em;
+    margin: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1 1 calc(33.333% - 2em);
+    text-align: center;
+}
+
+.service {
+    background-color: white;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color:black;
+    width: 98%; /* Cambia el ancho según tus necesidades */
+    margin-bottom: 20px; /* Espacio entre los servicios */
+    text-align: center; /* Alinea el contenido al centro */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1em;
+}
+
+form input, form textarea {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 1em;
+    padding: 1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
